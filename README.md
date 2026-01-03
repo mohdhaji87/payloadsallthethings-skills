@@ -16,7 +16,7 @@ A comprehensive Claude Code plugin providing 61 security testing skills based on
 ### Method 1: Clone and Install
 ```bash
 # Clone the repository
-git clone https://github.com/YOUR_USERNAME/payloadsallthethings-skills.git
+git clone https://github.com/mohdhaji87/payloadsallthethings-skills.git
 
 # Navigate to the directory
 cd payloadsallthethings-skills
@@ -185,5 +185,5 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 ## Support
 
-- Issues: [GitHub Issues](https://github.com/YOUR_USERNAME/payloadsallthethings-skills/issues)
-- Discussions: [GitHub Discussions](https://github.com/YOUR_USERNAME/payloadsallthethings-skills/discussions)
+- Issues: [GitHub Issues](https://github.com/mohdhaji87/payloadsallthethings-skills/issues)
+- Discussions: [GitHub Discussions](https://github.com/mohdhaji87/payloadsallthethings-skills/discussions)
