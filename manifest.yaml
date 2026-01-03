@@ -1,0 +1,206 @@
+# PayloadsAllTheThings Skills Plugin Manifest
+# Claude Code Plugin Configuration
+
+name: payloadsallthethings-skills
+version: 1.0.0
+description: >
+  Comprehensive security testing skills based on PayloadsAllTheThings.
+  61 vulnerability categories with payloads, techniques, and exploitation
+  methods for authorized penetration testing and security assessments.
+
+author: Security Skills Marketplace
+license: MIT
+homepage: https://github.com/swisskyrepo/PayloadsAllTheThings
+
+# Plugin metadata
+metadata:
+  category: security
+  tags:
+    - penetration-testing
+    - security
+    - payloads
+    - exploitation
+    - web-security
+    - appsec
+    - bugbounty
+    - ctf
+    - red-team
+  min_claude_version: "1.0.0"
+
+# Required permissions
+permissions:
+  - read_files
+  - glob_files
+  - grep_files
+
+# Skill definitions
+skills:
+  # Injection Attacks
+  - name: sqli
+    trigger: "/sqli"
+    description: "SQL Injection payloads and techniques"
+    file: skills/47-sql-injection.md
+
+  - name: xss
+    trigger: "/xss"
+    description: "Cross-Site Scripting techniques"
+    file: skills/59-xss-injection.md
+
+  - name: command-injection
+    trigger: "/cmdi"
+    description: "OS Command Injection"
+    file: skills/11-command-injection.md
+
+  - name: xxe
+    trigger: "/xxe"
+    description: "XML External Entity Injection"
+    file: skills/60-xxe-injection.md
+
+  - name: ssti
+    trigger: "/ssti"
+    description: "Server-Side Template Injection"
+    file: skills/50-server-side-template-injection.md
+
+  - name: nosql
+    trigger: "/nosql"
+    description: "NoSQL Injection"
+    file: skills/36-nosql-injection.md
+
+  - name: graphql
+    trigger: "/graphql"
+    description: "GraphQL Injection"
+    file: skills/22-graphql-injection.md
+
+  - name: ldap
+    trigger: "/ldap"
+    description: "LDAP Injection"
+    file: skills/33-ldap-injection.md
+
+  # Authentication & Session
+  - name: jwt
+    trigger: "/jwt"
+    description: "JWT Attack Techniques"
+    file: skills/31-json-web-token.md
+
+  - name: oauth
+    trigger: "/oauth"
+    description: "OAuth Misconfiguration"
+    file: skills/37-oauth-misconfiguration.md
+
+  - name: csrf
+    trigger: "/csrf"
+    description: "Cross-Site Request Forgery"
+    file: skills/12-cross-site-request-forgery.md
+
+  # Server-Side Vulnerabilities
+  - name: ssrf
+    trigger: "/ssrf"
+    description: "Server-Side Request Forgery"
+    file: skills/49-server-side-request-forgery.md
+
+  - name: lfi
+    trigger: "/lfi"
+    description: "Local/Remote File Inclusion"
+    file: skills/20-file-inclusion.md
+
+  - name: file-upload
+    trigger: "/upload"
+    description: "Insecure File Upload"
+    file: skills/53-upload-insecure-files.md
+
+  - name: deserialization
+    trigger: "/deserial"
+    description: "Insecure Deserialization"
+    file: skills/26-insecure-deserialization.md
+
+  # Client-Side Vulnerabilities
+  - name: cors
+    trigger: "/cors"
+    description: "CORS Misconfiguration"
+    file: skills/05-cors-misconfiguration.md
+
+  - name: prototype-pollution
+    trigger: "/prototype"
+    description: "Prototype Pollution"
+    file: skills/41-prototype-pollution.md
+
+  # Access Control
+  - name: idor
+    trigger: "/idor"
+    description: "Insecure Direct Object Reference"
+    file: skills/27-insecure-direct-object-references.md
+
+  # Specialized
+  - name: prompt-injection
+    trigger: "/promptinj"
+    description: "LLM Prompt Injection"
+    file: skills/40-prompt-injection.md
+
+  - name: api-keys
+    trigger: "/apikeys"
+    description: "API Key Detection"
+    file: skills/01-api-key-leaks.md
+
+# All 61 skill files
+skill_files:
+  - skills/01-api-key-leaks.md
+  - skills/02-account-takeover.md
+  - skills/03-brute-force-rate-limit.md
+  - skills/04-business-logic-errors.md
+  - skills/05-cors-misconfiguration.md
+  - skills/06-crlf-injection.md
+  - skills/07-csv-injection.md
+  - skills/08-cve-exploits.md
+  - skills/09-clickjacking.md
+  - skills/10-client-side-path-traversal.md
+  - skills/11-command-injection.md
+  - skills/12-cross-site-request-forgery.md
+  - skills/13-dns-rebinding.md
+  - skills/14-dom-clobbering.md
+  - skills/15-denial-of-service.md
+  - skills/16-dependency-confusion.md
+  - skills/17-directory-traversal.md
+  - skills/18-encoding-transformations.md
+  - skills/19-external-variable-modification.md
+  - skills/20-file-inclusion.md
+  - skills/21-google-web-toolkit.md
+  - skills/22-graphql-injection.md
+  - skills/23-http-parameter-pollution.md
+  - skills/24-headless-browser.md
+  - skills/25-hidden-parameters.md
+  - skills/26-insecure-deserialization.md
+  - skills/27-insecure-direct-object-references.md
+  - skills/28-insecure-management-interface.md
+  - skills/29-insecure-randomness.md
+  - skills/30-insecure-source-code-management.md
+  - skills/31-json-web-token.md
+  - skills/32-java-rmi.md
+  - skills/33-ldap-injection.md
+  - skills/34-latex-injection.md
+  - skills/35-mass-assignment.md
+  - skills/36-nosql-injection.md
+  - skills/37-oauth-misconfiguration.md
+  - skills/38-orm-leak.md
+  - skills/39-open-redirect.md
+  - skills/40-prompt-injection.md
+  - skills/41-prototype-pollution.md
+  - skills/42-race-condition.md
+  - skills/43-regular-expression.md
+  - skills/44-request-smuggling.md
+  - skills/45-reverse-proxy-misconfigurations.md
+  - skills/46-saml-injection.md
+  - skills/47-sql-injection.md
+  - skills/48-server-side-include-injection.md
+  - skills/49-server-side-request-forgery.md
+  - skills/50-server-side-template-injection.md
+  - skills/51-tabnabbing.md
+  - skills/52-type-juggling.md
+  - skills/53-upload-insecure-files.md
+  - skills/54-virtual-hosts.md
+  - skills/55-web-cache-deception.md
+  - skills/56-web-sockets.md
+  - skills/57-xpath-injection.md
+  - skills/58-xslt-injection.md
+  - skills/59-xss-injection.md
+  - skills/60-xxe-injection.md
+  - skills/61-zip-slip.md

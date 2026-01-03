@@ -1,0 +1,15 @@
+{
+  "plugins": {
+    "payloadsallthethings-skills": {
+      "enabled": true,
+      "path": ".."
+    }
+  },
+  "permissions": {
+    "allow": [
+      "Read(**)",
+      "Glob(**)",
+      "Grep(**)"
+    ]
+  }
+}
