@@ -1,20 +1,20 @@
 {
-  "name": "@security-skills/payloadsallthethings",
+  "name": "@mohdhaji87/payloadsallthethings-skills",
   "version": "1.0.0",
   "description": "Comprehensive security testing skills based on PayloadsAllTheThings - 61 vulnerability categories with payloads, techniques, and exploitation methods",
-  "main": "plugin.json",
+  "main": ".claude-plugin/marketplace.json",
   "scripts": {
-    "install": "bash install.sh",
     "test": "echo 'Plugin validation passed'",
-    "lint": "echo 'Linting skill files...' && ls skills/*.md | wc -l"
+    "lint": "echo 'Linting skill files...' && ls payloadsallthethings/skills/*/SKILL.md | wc -l"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/payloadsallthethings-skills.git"
+    "url": "https://github.com/mohdhaji87/payloadsallthethings-skills.git"
   },
   "keywords": [
     "claude-code",
     "claude-code-plugin",
+    "claude-code-marketplace",
     "security",
     "penetration-testing",
     "payloads",
@@ -30,27 +30,26 @@
     "xxe",
     "ssti"
   ],
-  "author": "Security Skills Marketplace",
+  "author": {
+    "name": "mohdhaji87",
+    "url": "https://github.com/mohdhaji87"
+  },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/payloadsallthethings-skills/issues"
+    "url": "https://github.com/mohdhaji87/payloadsallthethings-skills/issues"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/payloadsallthethings-skills#readme",
-  "engines": {
-    "node": ">=16.0.0"
-  },
+  "homepage": "https://github.com/mohdhaji87/payloadsallthethings-skills#readme",
   "files": [
-    "skills/",
-    "plugin.json",
-    "manifest.yaml",
-    "CLAUDE.md",
+    ".claude-plugin/",
+    "payloadsallthethings/",
     "README.md",
     "LICENSE",
-    "install.sh"
+    "CLAUDE.md"
   ],
   "claude-code": {
-    "plugin": true,
+    "marketplace": true,
     "version": "1.0.0",
+    "plugins": 1,
     "skills": 61,
     "categories": [
       "injection",

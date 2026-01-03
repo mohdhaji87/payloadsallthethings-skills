@@ -1,0 +1,23 @@
+{
+  "name": "payloadsallthethings-skills",
+  "owner": {
+    "name": "mohdhaji87",
+    "url": "https://github.com/mohdhaji87"
+  },
+  "metadata": {
+    "description": "Comprehensive security testing skills based on PayloadsAllTheThings - 61 vulnerability categories with payloads, techniques, and exploitation methods",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "payloadsallthethings",
+      "source": "./payloadsallthethings",
+      "description": "61 comprehensive security testing skills covering SQL injection, XSS, SSRF, XXE, SSTI, JWT attacks, OAuth, CORS, file upload bypass, deserialization, and more. Based on PayloadsAllTheThings repository for authorized penetration testing and security assessments.",
+      "version": "1.0.0",
+      "author": {
+        "name": "mohdhaji87",
+        "url": "https://github.com/mohdhaji87"
+      }
+    }
+  ]
+}

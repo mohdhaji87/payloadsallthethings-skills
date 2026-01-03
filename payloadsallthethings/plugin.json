@@ -1,0 +1,21 @@
+{
+  "name": "payloadsallthethings",
+  "version": "1.0.0",
+  "description": "Comprehensive security testing skills based on PayloadsAllTheThings - 61 vulnerability categories with payloads, techniques, bypass methods, and exploitation tools for authorized penetration testing, CTFs, bug bounties, and security research.",
+  "author": {
+    "name": "mohdhaji87",
+    "url": "https://github.com/mohdhaji87"
+  },
+  "homepage": "https://github.com/mohdhaji87/payloadsallthethings-skills",
+  "keywords": [
+    "security",
+    "penetration-testing",
+    "payloads",
+    "exploitation",
+    "web-security",
+    "appsec",
+    "bugbounty",
+    "ctf",
+    "red-team"
+  ]
+}

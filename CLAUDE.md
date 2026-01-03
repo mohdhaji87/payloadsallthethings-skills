@@ -14,9 +14,9 @@ Users can invoke skills using slash commands:
 
 ### Contextual Assistance
 When users ask about security testing, reference the appropriate skill file:
-- "How to test for SQL injection?" → Read `skills/47-sql-injection.md`
-- "CORS bypass techniques?" → Read `skills/05-cors-misconfiguration.md`
-- "JWT none algorithm attack?" → Read `skills/31-json-web-token.md`
+- "How to test for SQL injection?" → Read `payloadsallthethings/skills/sqli/SKILL.md`
+- "CORS bypass techniques?" → Read `payloadsallthethings/skills/cors/SKILL.md`
+- "JWT none algorithm attack?" → Read `payloadsallthethings/skills/jwt/SKILL.md`
 
 ## Skill Categories
 
@@ -50,11 +50,16 @@ When users ask about security testing, reference the appropriate skill file:
 
 ## File Structure
 ```
-skills/
-├── 01-api-key-leaks.md
-├── 02-account-takeover.md
-├── ...
-└── 61-zip-slip.md
+.claude-plugin/
+└── marketplace.json       # Marketplace configuration
+
+payloadsallthethings/
+├── plugin.json           # Plugin metadata
+└── skills/
+    ├── sqli/SKILL.md
+    ├── xss/SKILL.md
+    ├── ssrf/SKILL.md
+    └── ... (61 skills)
 ```
 
 ## Payload Formatting
