@@ -22,16 +22,11 @@ git clone https://github.com/mohdhaji87/payloadsallthethings-skills.git
 cd payloadsallthethings-skills
 
 # Install as Claude Code plugin
-claude mcp add payloadsallthethings-skills
+claude mcp add payloadsallthethings-skills .
 ```
 
-### Method 2: Direct Installation
-```bash
-# Add as a plugin from the marketplace
-claude plugins add payloadsallthethings-skills
-```
 
-### Method 3: Manual Installation
+### Method 2: Manual Installation
 1. Download/clone this repository
 2. Copy to your Claude Code plugins directory:
    ```bash
